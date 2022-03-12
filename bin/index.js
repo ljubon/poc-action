@@ -4,13 +4,20 @@ const core = require("@actions/core");
 const github = require("@actions/github");
 try {
     // `who-to-greet` input defined in action metadata file
-    const nameToGreet = core.getInput('ime');
-    console.log(`Cao ${nameToGreet}!`);
-    const time = (new Date()).toTimeString();
-    core.setOutput("Vreme", time);
+    const inputs = {
+        owner: core.getInput('owner'),
+        repo: core.getInput('repo'),
+        ref: core.getInput('ref')
+    }
+
+    console.log(`Publish chart for ${inputs.owner}/${inputs.repo} with tag ${inputs.ref}`);
+
     // Get the JSON webhook payload for the event that triggered the workflow
-    const payload = JSON.stringify(github.context.payload, undefined, 2);
-    console.log(`The event payload: ${payload}`);
+    // const payload = JSON.stringify(github.context.payload, undefined, 2);
+    // console.log(`The event payload: ${payload}`);
+    
+    const time = (new Date()).toTimeString();
+
 }
 catch (error) {
     console.log("Ne radi");

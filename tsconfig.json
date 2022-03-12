@@ -5,6 +5,7 @@
       "target": "esnext",
       "module": "CommonJS",
       "moduleResolution": "node",
+      "resolveJsonModule": true,
       "declaration": true,
       "sourceMap": true,
       "stripInternal": true,

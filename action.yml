@@ -1,12 +1,20 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
-  ime:  # id of input
-    description: 'Who to greet'
+  owner:  # Source repo owner
+    description: 'Source repository owner'
     required: true
-    default: 'World'
+    default: ''
+  repo:  # id of input
+    description: 'Source repository name'
+    required: true
+    default: ''
+  ref:  # id of input
+    description: 'Branch name or tag'
+    required: true
+    default: ''
 outputs:
-  Vreme: # id of output
+  time: # id of output
     description: 'The time we greeted you'
 runs:
   using: 'node16'
