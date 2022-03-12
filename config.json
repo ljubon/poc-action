@@ -52,3 +52,36 @@
     }
   ]
 }
+
+// {
+//   "marijana": {
+//     "owner": "marijana",
+//     "repo": "kida",
+//     "refs": [
+//       {
+//         "ref": "refs/heads/v1000"
+//       }
+//     ],
+//     "charts": [
+//       {
+//         "source": "testMe",
+//         "destination": "testMe"
+//       }
+//     ]
+//   },
+//   "jgiannuzzi": {
+//     "owner": "jgiannuzzi-org",
+//     "repo": "toyrepo",
+//     "refs": [
+//       {
+//         "ref": "refs/heads/main"
+//       }
+//     ],
+//     "charts": [
+//       {
+//         "source": "storm",
+//         "destination": "storm"
+//       }
+//     ]
+//   }
+// }

@@ -13,7 +13,7 @@ try {
         config.sources[0].repo == inputs.repo &&
         config.sources[0].refs[0].ref == `refs/heads/${inputs.ref}`) {
         console.log(`${inputs.owner} exist in source config`);
-        console.log(`${config.sources[0]}`);
+        console.log(`${JSON.stringify(config.sources[0])}`);
     }
     console.log(`Publish chart for ${inputs.owner}/${inputs.repo} with tag ${inputs.ref}`);
     const time = (new Date()).toTimeString();
