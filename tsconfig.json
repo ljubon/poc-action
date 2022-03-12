@@ -2,9 +2,8 @@
   "compilerOptions": {
       "strict": true,
       "outDir": "bin",
-      "outFile": "./bin/index.js",
       "target": "esnext",
-      "module": "AMD",
+      "module": "CommonJS",
       "moduleResolution": "node",
       "declaration": true,
       "sourceMap": true,
