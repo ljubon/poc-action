@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+      "strict": true,
+      "outDir": "bin",
+      "outFile": "./bin/index.js",
+      "target": "esnext",
+      "module": "AMD",
+      "moduleResolution": "node",
+      "declaration": true,
+      "sourceMap": true,
+      "stripInternal": true,
+      "experimentalDecorators": true,
+      "pretty": true,
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitReturns": true,
+      "forceConsistentCasingInFileNames": true
+  },
+  "files": [
+      "index.ts"
+  ]
+}
