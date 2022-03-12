@@ -1,6 +1,21 @@
 {
   "sources": [
     {
+      "owner": "marijana",
+      "repo": "kida",
+      "refs": [
+        {
+          "ref": "refs/heads/v1000"
+        }
+      ],
+      "charts": [
+        {
+          "source": "testMe",
+          "destination": "testMe"
+        }
+      ]
+    },
+    {
       "owner": "jgiannuzzi-org",
       "repo": "toyrepo",
       "refs": [

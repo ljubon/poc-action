@@ -4,11 +4,7 @@ const core = require("@actions/core");
 const github = require("@actions/github");
 try {
     // `who-to-greet` input defined in action metadata file
-    const inputs = {
-        owner: core.getInput('owner'),
-        repo: core.getInput('repo'),
-        ref: core.getInput('ref')
-    }
+
 
     console.log(`Publish chart for ${inputs.owner}/${inputs.repo} with tag ${inputs.ref}`);
 
