@@ -13,7 +13,7 @@ try {
     if (
         config.sources[0].owner == inputs.owner &&
         config.sources[0].repo == inputs.repo &&
-        config.sources[0].refs == `refs/heads/${inputs.ref}`
+        config.sources[0].refs[0].ref == `refs/heads/${inputs.ref}`
     ) {
         console.log(`${inputs.owner} exist in source config`);
         console.log(`${config.sources[0]}`);
